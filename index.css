@@ -1,0 +1,62 @@
+@import url("https://uilight.netlify.app/main.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+.container{
+    width:60%;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin: 20px auto;
+  
+}
+label,input{
+    display: block;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+h2{
+    margin-left: 33%;  
+    margin-bottom: 30px;
+}
+
+input{
+    width: 50%;
+    height:4.7vh;
+    padding: 5px;
+    color: black;
+    font-size: 18px;
+}
+.empty-field,.error-message{
+    color: red;
+    margin-left: 25%;
+}
+.d-block{
+    display: none;
+}
+.passwds{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    right: 0;
+    margin-right: 26%;
+    bottom: 0;
+    cursor: pointer;
+}
+button{
+   margin-left: 40%;
+   margin-top: 15px;
+}
+
+
+@media screen and (max-width: 750px) {
+    h2{
+        margin-left: 21%;  
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    button{
+        margin-left: 30%;
+        margin-top: 15px;
+     }
+}
+

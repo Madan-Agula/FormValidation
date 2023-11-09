@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Validation</title>
+    <meta name="author" content="Agula Madan" />
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Validation</h2>
+        <form class="form" autocomplete="off">
+            <div>
+                <label for="first">First Name</label>
+                <input data-key="first" type="text" name="first" id="first"/>
+                <span data-error="fn-err" class="error-message"
+                >Name must only contain alphabets</span
+              >
+              <span class="empty-field">*Please fill this field</span>
+            </div>
+            <div>
+                <label for="last">Last Name</label>
+                <input data-key="last" id="last" name="last" type="text"/>
+                <span data-error="fn-err" class="error-message"
+                >Name must only contain alphabets</span
+              >
+              <span class="empty-field">*Please fill this field</span>
+            </div>
+            <div>
+                <label for="email">Email Id</label>
+                <input data-key="email" id="email" name="email" type="email" autocomplete="email"/>
+                <span data-error="email-err" class="error-message">Invalid Email</span>
+                <span class="empty-field">*Please fill this field</span>
+            </div>
+            <div>
+                <label for="passwd">Password</label>
+                <div class="passwds">
+                    <input data-key="passwd" id="passwd" name="passwd" type="password">
+                    <button class="btn">
+                        <span class="eye material-icons-outlined">visibility</span>
+                    </button>
+                </div>
+                <ul data-error="pwd-err" class="error-message ul">
+                    <li class="list">
+                      Password must contain atleast 8 characters
+                    </li>
+                    <li class="list">
+                      Password must contain atleast one lower case letter
+                    </li>
+                    <li class="list">
+                      Password must contain atleast one upper case letter
+                    </li>
+                    <li class="list">Password must contain atleast one digit</li>
+                    <li class="list">
+                      Password must contain atleast one special character (!@#$%^&*)
+                    </li>
+                  </ul>
+                  <span class="empty-field">*Please fill this field</span>
+            </div>
+                <button class="button btn-primary cursor">submit</button>
+        </form>
+    </div>
+    <script  src="./index.js"></script>
+</body>
+</html>
